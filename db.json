@@ -1,0 +1,290 @@
+{
+  "users": [
+    {
+      "id": 478956,
+      "name": "Maksym",
+      "email": "klecdeveloper@gmail.com",
+      "password": "11111111"
+    },
+    {
+      "id": 56874,
+      "name": "Dima",
+      "email": "dima@gmail.com",
+      "password": "22222222"
+    },
+    {
+      "id": 59684,
+      "name": "weeeeee",
+      "email": "qwq@qqqq",
+      "password": "11111111"
+    },
+    {
+      "id": 59677,
+      "name": "Sveta",
+      "email": "sveta@gmail.com",
+      "password": "11111111"
+    },
+    {
+      "id": 17747,
+      "name": "1dmkj",
+      "email": "mmm@fff",
+      "password": "11111111"
+    },
+    {
+      "id": 76794,
+      "name": "qqqqqq",
+      "email": "qq@www",
+      "password": "11111111"
+    },
+    {
+      "id": 11761,
+      "name": "Liza",
+      "email": "liza@gmail.com",
+      "password": "11111111"
+    }
+  ],
+  "posts": [
+    {
+      "id": 57375,
+      "userId": "56874",
+      "title": "Economy",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto consectetur consequuntur deleniti ex exercitationem incidunt nulla voluptate? Ab asperiores culpa ea eligendi et fuga non officiis quisquam ratione voluptate?"
+    },
+    {
+      "id": 6796,
+      "userId": "56874",
+      "title": "Biology",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur dolor ea, excepturi harum id laboriosam laudantium neque nihil officiis perferendis perspiciatis placeat porro quae quidem similique tenetur veritatis voluptatum?"
+    },
+    {
+      "id": 66682,
+      "userId": "478956",
+      "title": "New Article",
+      "body": "Something new"
+    },
+    {
+      "id": 18367,
+      "userId": "478956",
+      "title": "Hello",
+      "body": "Hello"
+    },
+    {
+      "id": 46601,
+      "userId": "11761",
+      "title": "New on",
+      "body": "jjjjjjjjjjjjjjj"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "478956",
+      "body": "Comments Comments Comments Comments Comments Comments Comments Comments Comments"
+    },
+    {
+      "id": "1",
+      "postId": "66682",
+      "userId": "56874",
+      "body": "Other Other Other Other Other Other Other Other Other Other Other Other "
+    },
+    {
+      "id": 51536,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "aaa"
+    },
+    {
+      "id": 14732,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "hello"
+    },
+    {
+      "id": 69080,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "qq"
+    },
+    {
+      "id": 69081,
+      "userId": null,
+      "postId": null,
+      "body": "sdfsf"
+    },
+    {
+      "id": 69082,
+      "userId": null,
+      "postId": null,
+      "body": "sdsd"
+    },
+    {
+      "id": 21739,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "Hello"
+    },
+    {
+      "id": 69083,
+      "userId": null,
+      "postId": null,
+      "body": "asasas"
+    },
+    {
+      "id": 98816,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "111"
+    },
+    {
+      "id": 14875,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "lll"
+    },
+    {
+      "id": 8990,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "wwww"
+    },
+    {
+      "id": 28114,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "k"
+    },
+    {
+      "id": 83607,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "yuio"
+    },
+    {
+      "id": 62428,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "hgf"
+    },
+    {
+      "id": 14390,
+      "userId": "478956",
+      "postId": "18367",
+      "body": "jh"
+    },
+    {
+      "id": 48980,
+      "userId": "478956",
+      "postId": "6796",
+      "body": "aaa"
+    },
+    {
+      "id": 26702,
+      "userId": "478956",
+      "postId": "6796",
+      "body": "Second part of comments"
+    },
+    {
+      "id": 89942,
+      "userId": "478956",
+      "postId": "6796",
+      "body": "sd"
+    },
+    {
+      "id": 49434,
+      "userId": "478956",
+      "postId": "6796",
+      "body": "tytukj"
+    },
+    {
+      "id": 23031,
+      "userId": "11761",
+      "postId": "6796",
+      "body": "I want to add some data here"
+    },
+    {
+      "id": 61890,
+      "userId": "478956",
+      "postId": "57375",
+      "body": "New comment"
+    },
+    {
+      "id": 86077,
+      "userId": "11761",
+      "postId": "46601",
+      "body": "Shit"
+    }
+  ]
+}

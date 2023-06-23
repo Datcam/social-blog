@@ -1,0 +1,36 @@
+<div class="container">
+  <app-header [userName]="userName"></app-header>
+  <div class="details-post-wrapper">
+    <div class="post-image">
+      <div class="no-avatar-icon-l"></div>
+    </div>
+    <div class="post-title-author">
+      <div class="title-post">{{post?.title}}</div>
+      <div class="author-post">{{userFromPost?.name}}</div>
+    </div>
+    <div class="post-content">
+      <span>{{post?.body}}</span>
+    </div>
+    <div class="post-comments">Comments</div>
+      <app-table [dataPosts]="commentList" [displayMode]="tableMode.COMMENTS"></app-table>
+<!--    <app-add-comment [postId]="1" [userId]="2"></app-add-comment>-->
+    <div class="add-comment-container">
+      <div class="title-add-comment">Add a comment</div>
+      <div class="body-add-comment">
+        <form [formGroup]="commentForm">
+          <div class="body-add-comment">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Body</mat-label>
+              <textarea formControlName="body" rows="10" matInput placeholder="Enter comment here"></textarea>
+            </mat-form-field>
+          </div>
+          <div class="submit-button-icon">
+            <mat-spinner *ngIf="showSpinner" [diameter]="25"></mat-spinner>
+            <button [disabled]="!commentForm.valid" type="button" (click)="submit()" mat-raised-button color="primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

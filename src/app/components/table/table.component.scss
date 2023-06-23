@@ -1,0 +1,22 @@
+.custom-table-row {
+  display: flex;
+  padding: 10px
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td.mat-cell:last-of-type, td.mat-cell:first-of-type {
+  padding: 0;
+  border: 0;
+}
+.no-data-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+  <app-header [userName]="userName"></app-header>
+  <div class="new-post-section">
+    <form [formGroup]="newPostForm" class="new-post-form">
+      <header class="header-new-post">New Post</header>
+      <div class="title-new-post">
+        <mat-form-field appearance="fill">
+          <mat-label>Title</mat-label>
+          <input
+            matInput
+            formControlName="title"
+          >
+        </mat-form-field>
+        <div class="error-text" *ngIf="titleMaxLength">* maximum 50 characters </div>
+      </div>
+      <div class="body-new-post">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Body</mat-label>
+          <textarea formControlName="body" rows="10" matInput placeholder="Enter text here"></textarea>
+        </mat-form-field>
+        <div class="error-text" *ngIf="bodyMaxLength">* maximum 300 characters </div>
+      </div>
+      <div class="submit-button-icon">
+        <mat-spinner *ngIf="showSpinner" [diameter]="25"></mat-spinner>
+        <button [disabled]="!newPostForm.valid" type="button" (click)="submit()" mat-raised-button color="primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

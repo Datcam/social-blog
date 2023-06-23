@@ -1,0 +1,58 @@
+<div class="container">
+  <form class="form-container" [formGroup]="registrationForm" #formDirective="ngForm">
+    <div class="app-form-field">
+      <mat-form-field appearance="fill">
+        <mat-label>User name</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          (input)="onUserNameChange()"
+        >
+      </mat-form-field>
+      <div class="error-text" *ngIf="userNameRequired && userNameTouched">* user name required</div>
+      <div class="error-text" *ngIf="minUserNameLength || maxUserNameLength">* user name must contain minimum 2 and maximum 20 characters</div>
+      <div class="error-text" *ngIf="isUserNameTaken">* This name is already taken</div>
+    </div>
+    <div class="app-form-field">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          formControlName="email"
+        >
+      </mat-form-field>
+      <div class="error-text" *ngIf="emailRequired && emailTouched">* email required</div>
+      <div class="error-text" *ngIf="emailValidation">* enter correct user email</div>
+    </div>
+   <div class="app-form-field">
+     <mat-form-field appearance="fill">
+       <mat-label>Password</mat-label>
+       <input
+         matInput
+         formControlName="password"
+         type="password"
+       >
+     </mat-form-field>
+     <div class="error-text" *ngIf="passwordRequired && passwordTouched">* password required</div>
+     <div class="error-text" *ngIf="passwordMinLengthValidation">* password must contain at least 8 characters</div>
+   </div>
+    <div class="app-form-field">
+      <mat-form-field appearance="fill">
+        <mat-label>Confirm password</mat-label>
+        <input
+          matInput
+          formControlName="confirmPassword"
+          type="password"
+        >
+      </mat-form-field>
+      <div class="error-text" *ngIf="confirmPasswordRequired && confirmPasswordTouched">* confirmation password required</div>
+      <div class="error-text" *ngIf="confirmationPasswordMinLengthValidation">* confirmation password must contain at least 8 characters</div>
+      <div class="error-text" *ngIf="isMismatchPassword">* confirmation password doesn't match</div>
+    </div>
+    <div class="submit-button-icon">
+      <mat-spinner *ngIf="showSpinner" [diameter]="25"></mat-spinner>
+      <button [disabled]="!registrationForm.valid" type="button" (click)="submit()" mat-button color="primary">Sign up</button>
+    </div>
+    <a routerLink="/login">Or sign in</a>
+  </form>
+</div>

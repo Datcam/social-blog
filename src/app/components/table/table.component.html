@@ -1,0 +1,22 @@
+<div class="custom-table">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <div class="custom-table-row">
+          <div [ngClass]="{ 'no-avatar-icon-l': tableMode === mode.POST, 'no-avatar-icon-s': tableMode === mode.COMMENTS }"></div>
+        </div>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="content">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element" [routerLink]="['/posts', element.id]">
+        <tr class="custom-table-row title-post">{{element.title}} <span *ngIf="tableMode === mode.POST">|</span> {{element.user.name}}</tr>
+        <tr class="custom-table-row">{{element.body}}</tr>
+      </td>
+    </ng-container>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSize]="10" hidePageSize="true"></mat-paginator>
+</div>

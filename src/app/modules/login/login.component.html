@@ -1,0 +1,33 @@
+<div class="container">
+  <form class="form-container" [formGroup]="loginForm">
+    <div class="app-form-field">
+      <mat-form-field appearance="fill">
+        <mat-label>User name</mat-label>
+        <input
+          matInput
+          formControlName="name"
+        >
+      </mat-form-field>
+      <div class="error-text" *ngIf="userNameRequired && userNameTouched">* user name required</div>
+      <div class="error-text" *ngIf="showUserNotExists">* This user name doesn't exist</div>
+    </div>
+    <div class="app-form-field">
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          formControlName="password"
+          type="password"
+        >
+      </mat-form-field>
+      <div class="error-text" *ngIf="passwordRequired && passwordTouched">* password required</div>
+      <div class="error-text" *ngIf="showUsernamePasswordIncorrect">* incorrect password or user name</div>
+    </div>
+    <mat-checkbox class="example-margin" formControlName="rememberMe">Remember me</mat-checkbox>
+    <div class="submit-button-icon">
+      <mat-spinner *ngIf="showSpinner" [diameter]="25"></mat-spinner>
+      <button [disabled]="!loginForm.valid" type="button" (click)="submit()" mat-raised-button mat-button color="primary">Sign in</button>
+    </div>
+    <a routerLink="/registration">Or sign uph</a>
+  </form>
+</div>

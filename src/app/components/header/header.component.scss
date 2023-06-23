@@ -1,0 +1,17 @@
+.logout-user-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 16px;
+  height: 40px;
+}
+
+.avatar-icon {
+  width: 30px;
+}
+
+.user-name-avatar {
+  display: flex;
+  align-items: center;
+}

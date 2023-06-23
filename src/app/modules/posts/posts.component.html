@@ -1,0 +1,5 @@
+<div class="container">
+  <app-header [userName]="userName"></app-header>
+  <div class="new-post-button"><button mat-raised-button color="primary" routerLink="/new-post">New post</button></div>
+  <app-table [dataPosts]="postList" [displayMode]="tableMode.POST"></app-table>
+</div>
